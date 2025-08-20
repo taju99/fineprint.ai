@@ -92,7 +92,7 @@ Based on the Product Requirements Document (PRD) for Fineprint.ai - an AI-powere
 
 - [ ] 1.0 Project Setup & Infrastructure
   - [x] 1.1 Initialize Next.js project with TypeScript and Tailwind CSS
-  - [ ] 1.2 Configure package.json with all required dependencies
+  - [x] 1.2 Configure package.json with all required dependencies
   - [ ] 1.3 Set up shadcn/ui component library
   - [ ] 1.4 Configure TypeScript and ESLint settings
   - [ ] 1.5 Create environment variables template and configuration
