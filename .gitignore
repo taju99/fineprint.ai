@@ -1,46 +1,203 @@
+# Fineprint.ai .gitignore
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
+# ====================
+# Dependencies
+# ====================
+node_modules/
 /.pnp
 .pnp.js
 .yarn/install-state.gz
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# local env files
-.env*.local
-.env
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
+# ====================
+# Next.js
+# ====================
+/.next/
+/out/
 next-env.d.ts
+.next/
+build/
+dist/
 
-# IDE
+# ====================
+# Environment Variables
+# ====================
+.env
+.env*.local
+.env.production
+.env.staging
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ====================
+# Testing & Coverage
+# ====================
+/coverage
+/.nyc_output
+/junit.xml
+test-results/
+playwright-report/
+
+# ====================
+# Build Outputs
+# ====================
+*.tsbuildinfo
+.turbo/
+.swc/
+
+# ====================
+# Database & Storage
+# ====================
+*.db
+*.sqlite
+*.sqlite3
+/uploads
+/temp-uploads
+/documents
+supabase/.branches
+supabase/.temp
+
+# ====================
+# API Keys & Secrets
+# ====================
+*.pem
+*.key
+*.p12
+*.pfx
+.secrets/
+secrets.json
+
+# ====================
+# Logs
+# ====================
+logs/
+*.log
+*.log.*
+pids/
+*.pid
+*.seed
+*.pid.lock
+lib-cov/
+
+# ====================
+# Runtime Data
+# ====================
+runtime/
+.grunt/
+.lock-wscript
+.vitepress/cache
+.vitepress/dist
+
+# ====================
+# Caches
+# ====================
+.cache/
+.parcel-cache/
+.npm
+.eslintcache
+.stylelintcache
+*.tgz
+.yarn-integrity
+
+# ====================
+# IDE & Editor Files
+# ====================
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
+.project
+.classpath
+.settings/
+.metadata/
 
-# OS
+# Cursor specific
+.cursor/
+
+# VS Code specific (if you want to keep some settings, remove these)
+# .vscode/settings.json
+# .vscode/tasks.json
+# .vscode/launch.json
+# .vscode/extensions.json
+
+# ====================
+# OS Generated Files
+# ====================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+Desktop.ini
+
+# ====================
+# Deployment
+# ====================
+.vercel
+.netlify/
+.railway/
+.platform/
+
+# ====================
+# Docker
+# ====================
+Dockerfile.local
+docker-compose.override.yml
+.dockerignore
+
+# ====================
+# Monitoring & Analytics
+# ====================
+.sentry/
+.posthog/
+
+# ====================
+# Temporary Files
+# ====================
+tmp/
+temp/
+*.tmp
+*.temp
+.temp/
+.tmp/
+
+# ====================
+# Backup Files
+# ====================
+*.bak
+*.backup
+*.old
+*.orig
+
+# ====================
+# AI/ML Specific
+# ====================
+/models/
+/datasets/
+*.pkl
+*.joblib
+/vectors/
+/embeddings/
+
+# ====================
+# PDF Processing
+# ====================
+/pdf-cache/
+/ocr-temp/
+/processed-docs/
+
+# ====================
+# Local Development
+# ====================
+.local/
+local/
+dev/
+debug/
