@@ -99,8 +99,8 @@ Based on the Product Requirements Document (PRD) for Fineprint.ai - an AI-powere
   - [x] 1.6 Set up Git repository with appropriate .gitignore
 
 - [ ] 2.0 User Authentication & Account Management
-  - [ ] 2.1 Set up Clerk authentication service integration
-  - [ ] 2.2 Create authentication middleware for protected routes
+  - [x] 2.1 Set up Clerk authentication service integration
+  - [x] 2.2 Create authentication middleware for protected routes
   - [ ] 2.3 Build login and signup page components
   - [ ] 2.4 Implement user profile management interface
   - [ ] 2.5 Configure authentication provider and session management

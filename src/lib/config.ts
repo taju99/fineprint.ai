@@ -110,7 +110,7 @@ export const getUploadLimits = (isPremium: boolean) => {
 }
 
 // Validation helpers
-export const validateFileUpload = (file: File, isPremium: boolean) => {
+export const validateFileUpload = (file: File, _isPremium: boolean) => {
   const errors: string[] = []
   
   // Check file size
